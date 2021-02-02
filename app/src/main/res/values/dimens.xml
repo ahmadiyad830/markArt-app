@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_home_size">22sp</dimen>
+    <dimen name="txt_home_margin">14dp</dimen>
+    <dimen name="img_story_home_width">130dp</dimen>
+    <dimen name="img_story_home_height">130dp</dimen>
+    <dimen name="img_home_margin">12dp</dimen>
+    <dimen name="btn_home_margin">12dp</dimen>
+    <dimen name="btn_txtSize_home">18sp</dimen>
+    <dimen name="btn_setting_margin">12dp</dimen>
+    <dimen name="btn_setting_marginEnd">12dp</dimen>
+    <dimen name="btn_setting_paddingLeft">12dp</dimen>
+    <dimen name="btn_setting_padding_Right">12dp</dimen>
+    <dimen name="btn_setting_txtSize">16sp</dimen>
+    <dimen name="btn_setting_radius">12dp</dimen>
+    <dimen name="cardMarginHorizontal">6dp</dimen>
+    <dimen name="cardMarginVertical">6dp</dimen>
+    <dimen name="margin_vertical_reg">12dp</dimen>
+    <dimen name="margin_horizontal_reg">8dp</dimen>
+    <dimen name="size_picture_profile">300dp</dimen>
+    <dimen name="btn_setting_stroke_width">2</dimen>
+</resources>

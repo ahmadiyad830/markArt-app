@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/re_send_password"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/email_to_send_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_forget_password"
+        android:layout_margin="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:autofillHints="@string/email"
+        android:background="@drawable/custom_edt"
+        android:drawableEnd="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="start"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimary"
+        android:textStyle="normal"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/ok_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_to_send_password"
+        android:layout_alignParentStart="true"
+        android:layout_marginVertical="22dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/custom_btn_stroke"
+        android:text="@string/ok"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/cancel_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_to_send_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="22dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/custom_btn_stroke"
+        android:text="@string/cancel"
+        android:textStyle="normal" />
+
+</RelativeLayout>

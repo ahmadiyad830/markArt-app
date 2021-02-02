@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragHome">
+
+    <fragment
+        android:id="@+id/fragSetting"
+        android:name="com.Softwillow.MarkArt.Fragment_UI.Setting.FragSetting"
+        android:label="3"
+        tools:layout="@layout/frag_setting" >
+        <action
+            android:id="@+id/action_fragSetting_to_menu_help_talent"
+            app:destination="@id/menu_help_talent" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragHome"
+        android:name="com.Softwillow.MarkArt.Fragment_UI.FragHome"
+        android:label="2"
+        tools:layout="@layout/frag_home" >
+        <action
+            android:id="@+id/action_fragHome_to_menu_help_talent"
+            app:destination="@id/menu_help_talent" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragProfile"
+        android:name="com.Softwillow.MarkArt.Fragment_UI.Profile.FragProfile"
+        android:label="1"
+        tools:layout="@layout/frag_profile" />
+    <fragment
+        android:id="@+id/menu_help_talent"
+        android:name="com.Softwillow.MarkArt.Fragment_UI.FragHelp"
+        android:label="4"
+        tools:layout="@layout/frag_help" >
+        <action
+            android:id="@+id/action_menu_help_talent_to_act_editProfile"
+            app:destination="@id/act_editProfile" />
+    </fragment>
+    <activity
+        android:id="@+id/act_editProfile"
+        android:name="com.Softwillow.MarkArt.Fragment_UI.Profile.Act_editProfile"
+        android:label="act_edit_profile"
+        tools:layout="@layout/act_edit_profile" />
+</navigation>

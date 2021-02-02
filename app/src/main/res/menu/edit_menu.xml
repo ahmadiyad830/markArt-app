@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_registration_talent"
+        android:checked="true"
+        android:icon="@drawable/ic_check"
+        android:title="@string/upDate"
+        app:showAsAction="always" />
+    <item
+        android:title="@string/back"
+        android:id="@+id/menu_back_activity"
+        android:checked="true"
+        android:icon="@drawable/ic_back_24_black"
+        app:showAsAction="ifRoom"/>
+<!--  <group android:visible="true">
+        <item
+            android:title="@string/help"
+            android:id="@+id/menu_help_talent"
+            android:checked="true"
+            android:visible="true"
+            android:icon="@drawable/ic_baseline_help_24" />
+    </group>  -->
+
+
+</menu>

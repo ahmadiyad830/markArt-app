@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Talent.ActWriter">
+
+    <ProgressBar
+        android:id="@+id/progressBar_writer"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_progressbar"
+        android:indeterminateTint="@android:color/black"
+        android:padding="8dp"
+        android:theme="@style/Widget.AppCompat.ProgressBar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_writer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:menu="@menu/edit_menu"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="@string/team_writer"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_writer_imgPersonal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="36dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <EditText
+                        android:id="@+id/edt_writer_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginVertical="12dp"
+                        android:background="@drawable/custom_edt"
+                        android:drawableEnd="@drawable/ic_id"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/colorAccent"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="@string/the_id"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edt_writer_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="12dp"
+                            android:background="@drawable/custom_edt"
+                            android:drawableEnd="@drawable/ic_baseline_location_on_24"
+                            android:drawableTint="@color/colorAccent"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:hint="@string/the_location"
+                            android:importantForAutofill="no"
+                            android:inputType="textAutoComplete"
+                            android:padding="12dp"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/holo_red_light"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edt_writer_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="12dp"
+                            android:background="@drawable/custom_edt"
+                            android:clickable="true"
+
+                            android:textColor="@android:color/black"
+                            android:fadeScrollbars="true"
+                            android:focusable="true"
+                            android:gravity="start"
+                            android:hint="@string/name_facebook"
+                            android:importantForAutofill="no"
+                            android:inputType="textPersonName"
+                            android:padding="12dp"
+                            android:scrollbars="vertical"
+                            android:textStyle="italic"
+                            android:textColorHint="@android:color/holo_red_light" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edt_writer_script"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="12dp"
+                            android:background="@drawable/custom_edt"
+                            android:clickable="true"
+                            android:textColor="@android:color/black"
+                            android:drawableEnd="@drawable/ic_baseline_menu_book_24"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:fadeScrollbars="true"
+                            android:focusable="true"
+                            android:gravity="start"
+                            android:hint="@string/the_script"
+                            android:importantForAutofill="no"
+                            android:inputType="textMultiLine"
+                            android:maxLines="12"
+                            android:padding="12dp"
+                            android:scrollbars="vertical"
+                            android:textStyle="italic"
+                            android:textColorHint="@android:color/holo_red_light" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

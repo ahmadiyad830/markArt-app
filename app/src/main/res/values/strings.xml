@@ -1,0 +1,154 @@
+<resources>
+    <!--  setting  -->
+    <string name="app_name">Art foot print</string>
+    <string name="not_have_account">Not have account ? check</string>
+    <string name="have_account">Have account ? check</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log In</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="setting">Setting</string>
+    <string name="help">Help</string>
+    <string name="facebook">Facebook</string>
+    <string name="log_out">Log out</string>
+    <string name="error">Error</string>
+    <string name="upDate">Up date</string>
+    <string name="add">Add picture</string>
+    <string name="info">Information</string>
+    <string name="acting">Actor</string>
+    <string name="story">Story</string>
+    <string name="about" translatable="false">About</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="the_developer">The developer</string>
+    <string name="language">the Language</string>
+    <string name="check_internet">Check internet</string>
+    <string name="emailTo">To</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="remove">Remove</string>
+    <string name="send">Send</string>
+    <string name="successful">The registration is sucsseful</string>
+    <string name="type_sex">Gender</string>
+    <string name="isRegistration">Have registration</string>
+    <!--  registration  -->
+    <string name="female">Female</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="birth_day">Date</string>
+    <string name="male">Male</string>
+    <string name="phone">Phone number</string>
+    <string name="version_App" translatable="false">1.0</string>
+    <!-- is translate false  -->
+    <string name="email_combany" translatable="false">softwillow3@gmail.com</string>
+    <string name="english" translatable="false">English</string>
+    <string name="arabic" translatable="false">عربي</string>
+    <string name="open">open</string>
+    <string name="close" translatable="false">close</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <!--    talent -->
+    <string name="teams">Teams</string>
+    <string name="team_drawer">Team drawer</string>
+    <string name="the_id">The id</string>
+    <!--    TODO remove one from location and id-->
+    <string name="the_location">The location</string>
+    <string name="the_script">The script</string>
+    <string name="id_person">Id Person</string>
+    <string name="location">Location</string>
+    <string name="registration_talent">Registration talent</string>
+    <string name="team_writer">writer</string>
+    <string name="writer">Writer</string>
+    <string name="talent">Talent</string>
+    <string name="drawer">Drawer</string>
+    <string name="singing">Singing</string>
+    <string name="sigIn_your_talent">Registration is available</string>
+    <string name="DrawerNull">Please add your drawer</string>
+    <string name="bigScript">The script big</string>
+    <string name="numberID">The number ID less than 10</string>
+    <string name="regTalent">Go to profile</string>
+    <string name="pictureDrawer">Add your drawer</string>
+    <string name="picturePersonal">Add picture to profile</string>
+    <string name="waite">the picture not upload waite a moment</string>
+    <string name="waite_splash">waite a moment</string>
+    <string name="notOpen">Registration is not available</string>
+
+
+    <string name="unit_ad_banner_size" translatable="false">ca-app-pub-1242830551419880/1756548610</string>
+    <string name="unit_ad_registration_size" translatable="false">ca-app-pub-1670497217981051/7131954793</string>
+
+    <!--    unique key-->
+    <string name="id_ad" translatable="false">ca-app-pub-1242830551419880~6577630456</string>
+    <string name="wiring" translatable="false">wiring</string>
+
+    <string name="center_email" translatable="false">mohamadsawallha@gmail.com</string>
+    <string name="error_name">name is bigger or smaller</string>
+    <string name="error_email">email is bigger</string>
+    <string name="error_number">number bigger or smaller 10</string>
+    <string name="company_name" translatable="false">team Soft willow</string>
+    <string name="error_version">application must be updated</string>
+    <string name="PERMISSION_DENIED">Unauthorized access</string>
+    <string name="soon">soon</string>
+    <string name="finish_app">Exit the application</string>
+    <string name="change_password">change password</string>
+    <string name="edit_info">edit info</string>
+    <string name="message_send_password">Check out the Gmail app</string>
+    <string name="Unknown_error">Unknown error</string>
+    <string name="operation_failed">operation failed</string>
+    <string name="accont_disable">Maybe your account disable</string>
+    <string name="multi_try">multi try wait a moment</string>
+    <string name="try_again">try again later</string>
+    <string name="send_email_dev">Send the developer mail, enter a picture of the error</string>
+    <string name="fixd_soon">It will be fixed soon</string>
+    <string name="not_possible">Not possible</string>
+    <string name="name_facebook">your name on facebook</string>
+    <string name="welcome_back">welcome back</string>
+    <string name="re_send_password">Rest yore password</string>
+    <string name="help_re_send">After click OK , Check your email</string>
+    <string name="save_me">save me</string>
+    <string name="ok">OK</string>
+    <string name="cancel">cancel</string>
+    <string name="back">back</string>
+    <string name="welcome">welcome</string>
+    <string name="account_expired">The supplied auth credential is malformed or has expired.</string>
+    <string name="formatted_email">The email address is badly formatted.</string>
+    <string name="password_invalid">The password is invalid</string>
+    <string name="error_credentils">credentials error</string>
+    <string name="operation_delicate">Log in again before retrying this request.</string>
+    <string name="error_email_used">\"The email address is already in use by another account.   \"</string>
+    <string name="error_email_disable">The user account has been disabled by an administrator.</string>
+    <string name="error_reglongtime">must sign in again.</string>
+    <string name="error_user_delete">The user  been deleted</string>
+    <string name="error_weak_password">The given password is invalid.</string>
+    <string name="warning">warning</string>
+    <string name="rate">rate us now</string>
+    <string name="design">design</string>
+    <string name="makeup">makeup</string>
+    <string name="clothes">clothes</string>
+    <string name="photo">photo</string>
+    <string name="add_your_birth">Add your birth date in the following way yyyy/mm/dd</string>
+
+    <array name="error_auth">
+        <item>ERROR_INVALID_CUSTOM_TOKEN</item>
+        <item>ERROR_OPERATION_NOT_ALLOWED</item>
+        <item>ERROR_MISSING_EMAIL</item>
+        <item>ERROR_CUSTOM_TOKEN_MISMATCH</item>
+        <item>ERROR_CREDENTIAL_ALREADY_IN_USE</item>
+        <item>ERROR_ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL</item>
+        <item>ERROR_INVALID_CREDENTIAL</item>
+        <item>ERROR_INVALID_EMAIL</item>
+        <item>ERROR_WRONG_PASSWORD</item>
+        <item>ERROR_USER_MISMATCH</item>
+        <item>ERROR_REQUIRES_RECENT_LOGIN</item>
+        <item>ERROR_EMAIL_ALREADY_IN_USE</item>
+        <item>ERROR_USER_DISABLED</item>
+        <item>ERROR_USER_TOKEN_EXPIRED</item>
+        <item>ERROR_INVALID_USER_TOKEN</item>
+        <item>ERROR_USER_NOT_FOUND</item>
+        <item>ERROR_WEAK_PASSWORD</item>
+    </array>
+
+</resources>
+
+
+
+

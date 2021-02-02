@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragment_UI.Setting.FragSetting">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/linear_home"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/fbutton_color_midnight_blue"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_regPortal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:text="@string/setting"
+                android:padding="6dp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="?attr/actionBarSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_home">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/btn_setting_margin"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_prof_typeSex3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="start|center"
+                            android:text="@string/language"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rad_setting_en"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:text="@string/english"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/rad_setting_ar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/arabic"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/asddd"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/btn_setting_margin"
+                        android:layout_weight="1"
+                        android:gravity="end|center"
+                        android:text="@string/help"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/btn_setting_txtSize"
+                        android:textStyle="bold"
+                        app:backgroundTint="@android:color/white"
+                        app:cornerRadius="@dimen/btn_setting_radius"
+                        app:elevation="2dp"
+                        app:icon="@drawable/ic_baseline_help_24"
+                        app:iconTint="@android:color/black"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp"
+                        tools:ignore="InefficientWeight" />
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="@dimen/btn_setting_margin"
+                        android:layout_weight="1"
+                        android:gravity="end|center"
+                        android:text="@string/rate"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/btn_setting_txtSize"
+                        android:textStyle="bold"
+                        app:backgroundTint="@android:color/white"
+                        app:cornerRadius="@dimen/btn_setting_radius"
+                        app:elevation="2dp"
+                        app:icon="@drawable/ic_baseline_star_rate_24"
+                        app:iconTint="@android:color/black"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp"
+                        tools:ignore="InefficientWeight" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/btn_setting_margin"
+
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="3dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="0dp">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="@dimen/btn_setting_padding_Right"
+                                    android:gravity="center"
+                                    android:text="@string/app_name"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    app:drawableStartCompat="@drawable/ic_about" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_weight="1"
+                                android:gravity="end|center"
+                                android:text="@string/version_App"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/about"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/btn_setting_margin"
+                        android:gravity="start|center"
+                        android:text="@string/about"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/btn_setting_txtSize"
+                        android:textStyle="bold"
+                        app:backgroundTint="@android:color/white"
+                        app:cornerRadius="@dimen/btn_setting_radius"
+                        app:elevation="2dp"
+                        app:icon="@drawable/ic_baseline_lock_24"
+                        app:iconTint="@android:color/black"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp" />
+
+                    <TextView
+                        android:id="@+id/txt_prof_typeSex2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:gravity="start"
+                        android:text="@string/suggestion"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.050000012" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_email_devloper"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/btn_setting_margin"
+                        android:gravity="end|center"
+                        android:text="@string/the_developer"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/btn_setting_txtSize"
+                        android:textStyle="bold"
+                        app:backgroundTint="@android:color/white"
+                        app:cornerRadius="@dimen/btn_setting_radius"
+                        app:elevation="2dp"
+                        app:icon="@drawable/ic_android"
+                        app:iconTint="@android:color/black"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_email_artFootPrint"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/btn_setting_margin"
+                        android:gravity="center|end"
+                        android:text="@string/app_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/btn_setting_txtSize"
+                        android:textStyle="bold"
+                        app:backgroundTint="@android:color/white"
+                        app:cornerRadius="@dimen/btn_setting_radius"
+                        app:elevation="2dp"
+                        app:icon="@drawable/acting"
+                        app:iconSize="30dp"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp" />
+
+                    <TextView
+                        android:id="@+id/txt_setting_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:gravity="start"
+                        android:text="@string/edit_info"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.050000012" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/change_password"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/btn_setting_margin"
+                        android:gravity="center|end"
+                        android:text="@string/change_password"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/btn_setting_txtSize"
+                        android:textStyle="bold"
+                        app:backgroundTint="@android:color/white"
+                        app:cornerRadius="@dimen/btn_setting_radius"
+                        app:elevation="2dp"
+                        app:icon="@drawable/ic_baseline_help_24"
+                        app:iconTint="@android:color/black"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_margin="@dimen/btn_setting_margin">
+
+                    <ImageView
+                        android:id="@+id/btn_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="16dp"
+                        android:background="?selectableItemBackground"
+                        android:backgroundTint="@color/colorAccent"
+                        android:clickable="true"
+                        android:contentDescription="TODO"
+                        android:elevation="6dp"
+                        android:focusable="true"
+                        android:src="@drawable/ic_svg_facebook"
+                        app:fabSize="auto"
+                        app:pressedTranslationZ="12dp"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_logOut"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="92dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_toEndOf="@+id/btn_share"
+                        android:text="@string/log_out"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/btn_setting_txtSize"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/red"
+                        app:cornerRadius="@dimen/btn_setting_radius"
+                        app:elevation="2dp"
+                        app:icon="@drawable/ic_baseline_help_24"
+                        app:iconTint="@android:color/white"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="1dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

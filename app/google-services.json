@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "446303392690",
+    "firebase_url": "https://mark-art-2020-soft-willow.firebaseio.com",
+    "project_id": "mark-art-2020-soft-willow",
+    "storage_bucket": "mark-art-2020-soft-willow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446303392690:android:bbdfa1a35dece33d184aab",
+        "android_client_info": {
+          "package_name": "com.Softwillow.MarkArt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446303392690-5e8hg8o5pc17lgtpvj5ld53vieokp6lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjdagIADIWlhuQ_JbUCDwBSvK1eyjzgkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446303392690-5e8hg8o5pc17lgtpvj5ld53vieokp6lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
